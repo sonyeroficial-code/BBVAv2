@@ -1,0 +1,21 @@
+EXTRACCIÓN DE ARCHIVOS PÚBLICOS
+Origen: https://bbv-v2.vercel.app/
+Fecha: 23 de noviembre de 2026 (Perú).
+
+El paquete conserva el HTML, JavaScript compilado, CSS y recursos públicos publicados por el sitio. Los archivos de assets/ conservan sus rutas y nombres.
+
+svg_extraidos_del_html/ contiene copias individuales de los tres SVG incrustados en el HTML inicial. Los iconos definidos por instrucciones JavaScript permanecen en los archivos JavaScript.
+
+externos/ contiene copias locales de las hojas de estilo y fuentes necesarias para que la interfaz también cargue sin internet.
+
+inventario_descarga.json registra tamaño, hash SHA-1 y resultado de cada archivo anunciado por ngsw.json. inventario_externos.json registra las descargas complementarias.
+
+No incluye código privado del servidor, base de datos, cuentas ni el proyecto fuente original de Angular/TypeScript. La web publicada entrega JavaScript compilado.
+
+MODO SIN INTERNET
+- La primera apertura debe hacerse con internet para que la PWA guarde todos los archivos en el teléfono.
+- Inicia sesión una vez con internet. Después, la sesión queda guardada y la app puede volver a abrirse sin conexión.
+- Si cerraste sesión, puedes volver a entrar sin internet usando las mismas credenciales que quedaron verificadas en ese dispositivo.
+- Consultas de titulares, registro de cuentas nuevas, recuperación de clave y otras funciones que necesitan el servidor no pueden actualizar datos hasta recuperar la conexión.
+
+Para servir la copia local: python3 -m http.server 8000 desde esta carpeta; abrir http://localhost:8000. Abrir index.html directamente como archivo no reproduce el entorno de la web.

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Símbolo de acceso">
+  <defs>
+    <linearGradient id="bg" x1="62" y1="42" x2="452" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a4f9e"/>
+      <stop offset="1" stop-color="#062046"/>
+    </linearGradient>
+    <linearGradient id="path" x1="140" y1="146" x2="380" y2="372" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4fd6d7"/>
+      <stop offset="1" stop-color="#1464a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="164" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="2"/>
+  <path d="M176 166h90c42 0 76 34 76 76v104" fill="none" stroke="url(#path)" stroke-width="52" stroke-linecap="round"/>
+  <path d="M336 346h-90c-42 0-76-34-76-76V166" fill="none" stroke="#FFFFFF" stroke-width="52" stroke-linecap="round"/>
+  <circle cx="170" cy="166" r="20" fill="#4fd6d7"/>
+  <circle cx="342" cy="346" r="20" fill="#FFFFFF"/>
+</svg>
